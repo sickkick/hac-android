@@ -45,6 +45,10 @@ android {
 }
 
 dependencies {
+    implementation(libs.play.services.mlkit.face.detection)
+    implementation(libs.androidx.camera.core)
+    implementation(libs.androidx.camera.view)
+    implementation(libs.androidx.camera.lifecycle)
     // Most of the dependencies are coming from the convention plugin to avoid duplication with `:automotive` module.
     "fullImplementation"(libs.car.projected)
 
